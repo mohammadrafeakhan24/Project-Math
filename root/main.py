@@ -12,7 +12,8 @@ console = Console()  # creating a console object
 def welcome():
     message = """# WELCOME TO PROJECT-MATH
 
-       What operation do you want to perform:
+       What operation do yo
+       u want to perform:
       1. Sequence and Series
       2. Complex Number
       3. Basic Calculator
@@ -41,26 +42,3 @@ def selection():
         console.print("Please Enter a valid input")
 
 selection()
-
-
-
-
-
-
-
-
-
-# def sqAndSeries(): 
-#             choice1Welcome = """# You have chossen Seqence and Series
-#             Please choose from AP or GP:
-#             For AP type '1'
-#             For GP type '2'
-#             """
-#             resultChoice1 = Markdown(choice1Welcome)
-#             console.print(resultChoice1)
-#             ans4sqAndSeries = input(">> Enter your choice: ")
-            
-#             if ans4sqAndSeries == '1':
-#                 console.print("You have selected AP")
-#             elif ans4sqAndSeries == '2':
-#                 console.print("You have selected GP")
