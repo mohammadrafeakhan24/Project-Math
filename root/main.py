@@ -2,8 +2,6 @@
 
 from rich.console import Console 
 from rich.markdown import Markdown
-from SequenceAndSeries.ap import ap
-
 
 console = Console()  # creating a console object
 
@@ -28,41 +26,16 @@ welcome()
 
 
 
-
-
-
-
-
-def sqAndSeries(): 
-            choice1Welcome = """# You have chossen Seqence and Series
-            Please choose from AP or GP:
-            For AP type '1'
-            For GP type '2'
-            """
-            resultChoice1 = Markdown(choice1Welcome)
-            console.print(resultChoice1)
-            ans4sqAndSeries = input(">> Enter your choice: ")
-            
-            if ans4sqAndSeries == '1':
-                console.print("You have selected AP")
-            elif ans4sqAndSeries == '2':
-                console.print("You have selected GP")
-
-
-
-
-
-
 def selection():
     choice = input(">> Enter your choice: ")
     if choice == '1':
-        sqAndSeries()
+        print("Working1")
     elif choice == '2':
-        complexno()
+        print("Working2")
     elif choice == '3':
-        basicCalculator()
+        print("Working3")
     elif choice == '4':
-        angleValue()
+        print("Working4")
     else:
         console.print("Please Enter a valid input")
 
@@ -76,3 +49,17 @@ selection()
 
 
 
+# def sqAndSeries(): 
+#             choice1Welcome = """# You have chossen Seqence and Series
+#             Please choose from AP or GP:
+#             For AP type '1'
+#             For GP type '2'
+#             """
+#             resultChoice1 = Markdown(choice1Welcome)
+#             console.print(resultChoice1)
+#             ans4sqAndSeries = input(">> Enter your choice: ")
+            
+#             if ans4sqAndSeries == '1':
+#                 console.print("You have selected AP")
+#             elif ans4sqAndSeries == '2':
+#                 console.print("You have selected GP")
