@@ -1,5 +1,6 @@
 # Rich is a python library which help to style output
 
+from calculator.calculator import calculator
 from rich.console import Console 
 from rich.markdown import Markdown
 
@@ -33,7 +34,7 @@ def selection():
     elif choice == '2':
         print("Working2")
     elif choice == '3':
-        print("Working3")
+        calculator()
     elif choice == '4':
         print("Working4")
     else:
