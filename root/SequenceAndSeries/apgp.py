@@ -1,3 +1,5 @@
+import math
+
 # CODE FOR AP
 
 
@@ -13,7 +15,9 @@
 print("How may I help you!! <3")
 print("")
 print("Chosse which operation you want to do :")
-print("1. Find number of terms when First and last term of AP is given.")
+print('''1. Find number of terms when First and last term of AP is given.
+2. Find last term when first term, number of term and common ratio given    
+''')
 
 selectOption = input("Please select one of the option :")
 
@@ -32,8 +36,36 @@ def numberofterms():
 
 
 
+
+
+
+
+# ============================CODE FOR GP STARTS ============================
+
+
+def gp_last_term():
+    term_1 = float(input("Enter 1st term of GP: "))
+    common_ratio = float(input("Enter common ratio(r): "))
+    no_terms = int(input("Enter no. of terms: "))
+
+    # to find last term
+    result_gp = term_1 * (int)(math.pow(common_ratio,no_terms-1))
+    print(result_gp)
+
+
+
+
+
+
+
+
+
+
+# ========================IF STATEMENT FOR EXECUTION OF CODE=========================
 if (selectOption == '1'):
     numberofterms()
+elif (selectOption == '2'):
+    gp_last_term()
 
 
 
