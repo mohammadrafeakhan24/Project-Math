@@ -12,7 +12,7 @@ print("")
 print("Chosse which operation you want to do :")
 print("1. Find number of terms when First and last term of AP is given.")
 
-selectOption = input("Please select one of the option ")
+selectOption = input("Please select one of the option :")
 
 #Finding number of terms of a AP
 
