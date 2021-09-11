@@ -1,10 +1,5 @@
 # Project Math
 
-This Project is a command line interface. I provide you some tools to perform mathematical operation on topics such as:
+This Project is a command line program. This program will allow users to calculate AP(Arithmetic Progression) and GP(Geometric progression) very easily.
+Hope this tool will help you in your studies.
 
-
-1.Arithmetic progression
-
-2.Geometric progression 
-
-and so on
