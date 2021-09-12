@@ -16,7 +16,8 @@ print("How may I help you!! <3")
 print("")
 print("Chosse which operation you want to do :")
 print('''1. Find number of terms when First and last term of AP is given.
-2. Find last term when first term, number of term and common ratio given    
+2. Find last term when first term, number of term and common ratio given.
+3. Find the sum of nth term of GP.    
 ''')
 
 selectOption = input("Please select one of the option :")
@@ -40,7 +41,7 @@ def numberofterms():
 
 
 
-# ============================CODE FOR GP STARTS ============================
+# ===================CODE FOR GP TO FIND LAST TERM STARTS ============================
 
 
 def gp_last_term():
@@ -53,6 +54,23 @@ def gp_last_term():
     print(result_gp)
 
 
+# ====================CODE FOR GP TO FIND LAST TERM END ==============================
+
+#====================CODE FOR GP TO FIND SUM===========================
+
+def gp_sum():
+    term_a = float(input("Enter 1st term of GP: "))
+    c_ratio = float(input("Enter common ratio: "))
+    n_term = int(input("Enter no of term: "))
+    
+    # checking if r>1 or r<1
+    
+    if c_ratio > 1.0:
+        sn = (term_a)/(c_ratio-1) * ((int)(math.pow(c_ratio,n_term))-1)
+        print(sn)
+    elif c_ratio < 1.0:
+        sn2 = (term_a)/(1-c_ratio) * (1-(int)(math.pow(c_ratio,n_term)))
+        print(sn2)
 
 
 
@@ -66,6 +84,7 @@ if (selectOption == '1'):
     numberofterms()
 elif (selectOption == '2'):
     gp_last_term()
-
+elif (selectOption == '3'):
+    gp_sum()
 
 
