@@ -1,6 +1,10 @@
 import math
-from SequenceAndSeries.gp import gp_last_term
-from SequenceAndSeries.gp import gp_sum
+from sequence_series.gp import gp_last_term
+from sequence_series.gp import gp_sum
+from rich import console
+from rich.console import Console
+
+console = Console()
 
 # CODE FOR AP
 
@@ -14,7 +18,7 @@ from SequenceAndSeries.gp import gp_sum
 #We know Formula of AP, an=a+(n-1)d
 
 def mainSqSeries(): 
-    print("How may I help you!! <3")
+    console.print("How may I help you!! <3",)
     print("")
     print("Chosse which operation you want to do :")
     print('''1. Find number of terms when First and last term of AP is given.

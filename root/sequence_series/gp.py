@@ -1,4 +1,8 @@
 import math
+from rich import console
+from rich.console import Console
+
+console = Console()
 
 
 # ===================CODE FOR GP TO FIND LAST TERM STARTS ============================

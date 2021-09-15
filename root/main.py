@@ -3,7 +3,7 @@
 from calculator.calculator import calculator
 from rich.console import Console 
 from rich.markdown import Markdown
-from SequenceAndSeries.ap import mainSqSeries
+from sequence_series.ap import mainSqSeries
 
 console = Console()  # creating a console object
 
