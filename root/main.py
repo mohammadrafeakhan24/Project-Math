@@ -3,6 +3,7 @@
 from calculator.calculator import calculator
 from rich.console import Console 
 from rich.markdown import Markdown
+from SequenceAndSeries.ap import mainSqSeries
 
 console = Console()  # creating a console object
 
@@ -30,7 +31,7 @@ welcome()
 def selection():
     choice = input(">> Enter your choice: ")
     if choice == '1':
-        print("Working1")
+        mainSqSeries()
     elif choice == '2':
         print("Working2")
     elif choice == '3':
@@ -50,17 +51,3 @@ selection()
 
 
 
-# def sqAndSeries(): 
-#             choice1Welcome = """# You have chossen Seqence and Series
-#             Please choose from AP or GP:
-#             For AP type '1'
-#             For GP type '2'
-#             """
-#             resultChoice1 = Markdown(choice1Welcome)
-#             console.print(resultChoice1)
-#             ans4sqAndSeries = input(">> Enter your choice: ")
-            
-#             if ans4sqAndSeries == '1':
-#                 console.print("You have selected AP")
-#             elif ans4sqAndSeries == '2':
-#                 console.print("You have selected GP")
