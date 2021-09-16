@@ -1,13 +1,10 @@
-import math
+import math  #unused
 from sequence_series.gp import gp_last_term
 from sequence_series.gp import gp_sum
 from rich import console
 from rich.console import Console
 
 console = Console()
-
-# CODE FOR AP
-
 
 #Code for calculating the first and last term of any AP.
 
@@ -16,6 +13,8 @@ console = Console()
 #d=common difference
 #n=number of terms
 #We know Formula of AP, an=a+(n-1)d
+
+
 
 def mainSqSeries(): 
     console.print("How may I help you!! :heart:",justify="center",style="blink yellow")
@@ -30,36 +29,61 @@ def mainSqSeries():
 
     #Finding number of terms of a AP
 
-    def numberofterms():    
+    def number_of_terms():    
         a=float(input("Enter the first term of the AP :"))
         l=float(input("Enter the last :"))
         d=float(input("Enter the common difference :"))
 
-        differenceof1standlastterm=(l-a)
-        numberoftermsminus1=differenceof1standlastterm/d
-        numberoftermsanswer=numberoftermsminus1+1
-        console.print("The number of terms in the AP is :",numberoftermsanswer)
 
 
 
 
+        difference_of_1st_and_last_term=(l-a)
+        number_of_terms_minus_1=difference_of_1st_and_last_term/d
+        number_of_terms_answer=number_of_terms_minus_1+1
+        print("The number of terms in the AP is :",number_of_terms_answer)
+        
+    #Sum of n number of terms 
+    
+    def sum_of_number_of_terms():
+        a=float(input("Enter the first term of the AP :"))
+        l=float(input("Enter the last :"))
+        n=float(input("Enter the number of terms of the A.P :"))
 
 
+    #Formula for sum = n/2(a+l)
 
-
-
-
-
-
-                                                                                
+        ndividedby2=n/2
+        sum_answer=ndividedby2*(a+l)
+        print("The sum number of terms in the AP is :", sum_answer)
+                                                                              
 
 
 # ========================IF STATEMENT FOR EXECUTION OF CODE=========================
+
     if (selectOption == '1'):
-        numberofterms()
+        number_of_terms()
     elif (selectOption == '2'):
         gp_last_term()
     elif (selectOption == '3'):
         gp_sum()
+    elif (selectOption == '4'):
+        sum_of_number_of_terms()
 
 
+#==================IGNORE=========================
+
+
+#All the defined variables in this file are:
+#selectOption = input("Please select one of the option :")
+#a=float(input("Enter the first term of the AP :"))
+#l=float(input("Enter the last :"))
+#d=float(input("Enter the common difference :"))
+#difference_of_1st_and_last_term=(l-a)
+#number_of_terms_minus_1=difference_of_1st_and_last_term/d
+#number_of_terms_answer=number_of_terms_minus_1+1
+#ndividedby2=n/2
+#sum_answer=ndividedby2*(a+l)
+
+
+#==================xXx=============================
