@@ -18,10 +18,10 @@ console = Console()
 #We know Formula of AP, an=a+(n-1)d
 
 def mainSqSeries(): 
-    console.print("How may I help you!! <3",)
-    print("")
-    print("Chosse which operation you want to do :")
-    print('''1. Find number of terms when First and last term of AP is given.
+    console.print("How may I help you!! :heart:",justify="center",style="blink yellow")
+    console.print("")
+    console.print("Chosse which operation you want to do :")
+    console.print('''1. Find number of terms when First and last term of AP is given.
     2. Find last term when first term, number of term and common ratio given.
     3. Find the sum of nth term of GP.    
     ''')
@@ -38,7 +38,7 @@ def mainSqSeries():
         differenceof1standlastterm=(l-a)
         numberoftermsminus1=differenceof1standlastterm/d
         numberoftermsanswer=numberoftermsminus1+1
-        print("The number of terms in the AP is :",numberoftermsanswer)
+        console.print("The number of terms in the AP is :",numberoftermsanswer)
 
 
 

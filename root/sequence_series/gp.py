@@ -15,7 +15,7 @@ def gp_last_term():
 
     # to find last term
     result_gp = term_1 * (int)(math.pow(common_ratio,no_terms-1))
-    print(result_gp)
+    console.print(result_gp)
 
 
 # ====================CODE FOR GP TO FIND LAST TERM END ==============================
@@ -31,7 +31,7 @@ def gp_sum():
     
     if c_ratio > 1.0:
         sn = (term_a)/(c_ratio-1) * ((int)(math.pow(c_ratio,n_term))-1)
-        print(sn)
+        console.print(sn)
     elif c_ratio < 1.0:
         sn2 = (term_a)/(1-c_ratio) * (1-(int)(math.pow(c_ratio,n_term)))
-        print(sn2)
+        console.print(sn2)

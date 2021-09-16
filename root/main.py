@@ -1,5 +1,6 @@
 # Rich is a python library which help to style output
 
+from rich.style import Style
 from calculator.calculator import calculator
 from rich.console import Console 
 from rich.markdown import Markdown
@@ -23,6 +24,7 @@ def welcome():
     """
     resultMsg = Markdown(message)
     console.print(resultMsg)
+    
 
 welcome()
 
@@ -30,16 +32,24 @@ welcome()
 
 def selection():
     choice = input(">> Enter your choice: ")
+    print("")
+    console.rule("")
+    print("")
+
     if choice == '1':
+        print("")         # these print are written to give space between line
         mainSqSeries()
     elif choice == '2':
+        print("")
         print("Working2")
     elif choice == '3':
+        print("")
         calculator()
     elif choice == '4':
+        print("")
         print("Working4")
     else:
-        console.print("Please Enter a valid input")
+        console.print("Please Enter a valid input", style="Red on black")
 
 selection()
 
