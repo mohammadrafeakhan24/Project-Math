@@ -12,7 +12,7 @@ console = Console()  # creating a console object
 
 
 def welcome():
-    message = """# WELCOME TO PROJECT-MATH
+    message = """# WELCOME TO PROJECT-MATH1
 
        What operation do you want to perform:
       1. Sequence and Series
